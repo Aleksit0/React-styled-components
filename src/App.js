@@ -2,17 +2,23 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Title = styled.h1`
-  color: red;
-  font-size: 5rem
+  color: orange;
+  font-size: 5  rem
+`;
+
+const Section = styled.section`
+  padding: 1em;
+  width: 50%;
+  background-color: blue;
 `;
 
 const App = () => {
   return (
-    <div>
+    <Section>
       <Title>
         Styled Title
       </Title>
-    </div>
+    </Section>
   )
 }
 
