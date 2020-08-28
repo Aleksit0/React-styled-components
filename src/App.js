@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Button from './components/Button';
 
 const Title = styled.h1`
   color: orange;
@@ -15,9 +16,8 @@ const Section = styled.section`
 const App = () => {
   return (
     <Section>
-      <Title>
-        Styled Title
-      </Title>
+      <Button primary> Click me </Button>
+      <Button> Click me </Button>
     </Section>
   )
 }
