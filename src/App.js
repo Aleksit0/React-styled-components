@@ -1,24 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 import Button from './components/Button';
-
-const Title = styled.h1`
-  color: orange;
-  font-size: 5  rem
-`;
-
-const Section = styled.section`
-  padding: 1em;
-  width: 50%;
-  background-color: blue;
-`;
+import {Wrapper} from './components/styled/Styled';
+import {Title} from './components/styled/Styled';
+import {BiggerTitle} from './components/styled/Styled';
+import {StyledButton} from './components/styled/Styled';
 
 const App = () => {
   return (
-    <Section>
-      <Button primary> Click me </Button>
-      <Button> Click me </Button>
-    </Section>
+    <Wrapper>
+      <Title>Normal title</Title>
+      <BiggerTitle>Bigger title</BiggerTitle>
+      <StyledButton>Click me</StyledButton>
+      <Button>Another button</Button>
+      <Button>Another button</Button>
+    </Wrapper>
   )
 }
 
